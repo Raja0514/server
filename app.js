@@ -1,7 +1,8 @@
 const express=require('express')
 const app=express();
-app.get('/',function(res,req){
-
-    res.send("hello world")
+app.get('/', (req, res) => {
+    res.send('Hello World!')
+  })
+app.listen(process.env.PORT||3000,()=>{
+    console.log('server running')
 })
-app.listen(process.env.PORT||3000)
