@@ -1,7 +1,7 @@
 const express=require('express')
 const app=express();
-app.get('/',(res,req)=>{
+app.get('/',function(res,req){
 
-    res.json('Hello World')
+    res.send("hello world")
 })
 app.listen(process.env.PORT||3000)
